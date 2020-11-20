@@ -1,0 +1,132 @@
+<html>
+<head>
+    <title>Tkinter Canvas</title>
+    <style type='text/css'>
+        #main{
+                height:2900;
+                widht:95%;
+                background-color:peachpuff;
+                margin:20px;
+                border-radius:20px;
+                padding:20px;
+                 }
+        #first{
+                height:500;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #third{
+                height:1200;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #fourth{
+                height:800;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        
+    </style>
+</head>
+<body>
+    <div id='main'>
+    <div id='first'>
+        <h2>Tkinter Canvas</h2>
+        <hr>
+        <p>The Canvas is a rectangular area intended for drawing pictures or other complex layouts. You can place graphics, text, widgets or frames on a Canvas.
+        </p>
+        <h4>Syntax:</h4>
+        <p>Here is the simple syntax to create this widget-</p>
+        
+        <p>w = Canvas ( master, option=value, ... ) </p>
+        <hr>
+        <h3>Parameters:</h3>
+        <h4>master:</h4>
+        <p>This represents the parent window.</p>
+        <h4>options:</h4>
+        <p>Here is the list of most commonly used options for this widget in the next page given below. These options can be used as key-value pairs separated by commas.
+        </p>
+    </div>
+    <div id='third'>
+        <h2>Options available and their description</h2>
+        <hr>
+        <h4>1.confine:</h4>
+        <p>If true (the default), the canvas cannot be scrolled outside of the scrollregion.</p>
+        <p> </p>
+        <h4>2.cursor:</h4>
+        <p>Cursor used in the canvas like arrow, circle, dot etc.</p>
+        <p> </p>
+        <h4>3.bd:</h4>
+        <p>Border width in pixels. Default is 2.</p>
+        <p> </p>
+        <h4>4.bg:</h4>
+        <p>Normal background color.</p>
+        <p> </p>
+        <h4>5.relief:</h4>
+        <p>Relief specifies the type of the border. Some of the values are SUNKEN, RAISED, GROOVE, and RIDGE.</p>
+        <p> </p>
+        <h4>6.scrollregion:</h4>
+        <p>A tuple (w, n, e, s) that defines over how large an area the canvas can be scrolled, where w is the left side, n the top, e the right side, and s the bottom.</p>
+        <p> </p>
+        <h4>7.width</h4>
+        <p>Size of the canvas in the X dimension.</p>
+        <p> </p>
+        <h4>8.height:</h4>
+        <p>Size of the canvas in the Y dimension.</p>
+        <p> </p>
+        <h4>9.highlightcolor:</h4>
+        <p>Color shown in the focus highlight.</p>
+        <p> </p>
+        <h4>10.xscrollincrement:</h4>
+        <p>If you set this option to some positive dimension, the canvas can be positioned only on multiples of that distance, and the value will be used for scrolling by scrolling units, such as when the user clicks on the arrows at the ends of a scrollbar.</p>
+        <p> </p>
+        <h4>11.xscrollcommand:</h4>
+        <p>If the canvas is scrollable, this attribute should be the .set() method of the horizontal scrollbar.</p>
+        <p> </p>
+        <h4>12.yscrollincrement:</h4>
+        <p>Works like xscrollincrement, but governs vertical movement.</p>
+        <p> </p>
+        <h4>13.yscrollcommand:</h4>
+        <p>If the canvas is scrollable, this attribute should be the .set() method of the vertical scrollbar.</p>
+        <p> </p>
+        
+        <p> </p>
+    </div>
+    <div id='fourth'>
+        <h2>Standard items:</h2>
+        <hr>
+        <p>The Canvas widget can support the following standard items-</p>
+        <h2>1.arc:</h2>
+        <p> Creates an arc item, which can be a chord, a pieslice or a simple arc.</p>
+        <p>coord = 10, 50, 240, 210</p>
+        <p>arc = canvas.create_arc(coord, start=0, extent=150, fill="blue")</p>
+        <h2>2.image:</h2>
+        <p>Creates an image item, which can be an instance of either the BitmapImage or the PhotoImage classes.</p>
+        <p> filename = PhotoImage(file = "sunshine.gif")</p>
+        <p>image = canvas.create_image(50, 50, anchor=NE, image=filename)</p>
+        <h2>3.line:</h2>
+        <p>Creates a line item.</p>
+        <p>line = canvas.create_line(x0, y0, x1, y1, ..., xn, yn, options)</p>
+        <p> </p>
+        <h2>4.oval:</h2>
+        <p>Creates a circle or an ellipse at the given coordinates. It takes two pairs of coordinates; the top left and bottom right corners of the bounding rectangle for the oval.</p>
+        <p>oval = canvas.create_oval(x0, y0, x1, y1, options)</p>
+        <p></p>
+        <h2>5.polygen:</h2>
+        <p>Creates a polygon item that must have at least three vertices.</p>
+        <p>oval = canvas.create_polygon(x0, y0, x1, y1,...xn, yn, options)</p>
+        <p></p>
+        
+     </div>
+  </div>
+</body>    
+</html>

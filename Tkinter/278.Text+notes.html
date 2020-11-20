@@ -1,0 +1,193 @@
+<html>
+<head>
+    <title>Tkinter Text</title>
+    <style type='text/css'>
+        #main{
+                height:4790;
+                widht:95%;
+                background-color:peachpuff;
+                margin:20px;
+                border-radius:20px;
+                padding:20px;
+                 }
+        #first{
+                height:520;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #third{
+                height:2410;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #fourth{
+                height:1510;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+    </style>
+</head>
+<body>
+    <div id='main'>
+    <div id='first'>
+        <h2>Tkinter Text</h2>
+        <hr>
+        <p>Text widgets provide advanced capabilities that allow you to edit a multiline text and format the way it has to be displayed, such as changing its color and font.</p>
+        <p>You can also use elegant structures like tabs and marks to locate specific sections of the text, and apply changes to those areas. Moreover, you can embed windows and images in the text because this widget was designed to handle both plain and formatted text.</p>
+        <p></p>
+        <h4>Syntax:</h4>
+        <p>Here is the simple syntax to create this widget-</p>
+        
+        <p>w = Text ( master, option, ... )</p>
+        <hr>
+        <h3>Parameters:</h3>
+        <h4>master:</h4>
+        <p>This represents the parent window.</p>
+        <h4>options:</h4>
+        <p>Here is the list of most commonly used options for this widget in the next page given below. These options can be used as key-value pairs separated by commas.
+        </p>
+    </div>
+    <div id='third'>
+        <h2>Options available and their description</h2>
+        <hr>
+        <h4>1.bg</h4>
+        <p>The default background color of the text widget.</p>
+        <p> </p>
+        <h4>2.bd</h4>
+        <p>The width of the border around the text widget. Default is 2 pixels.</p>
+        <p> </p>
+        <h4>3.cursor</h4>
+        <p>The cursor that will appear when the mouse is over the text widget.</p>
+        <p> </p>
+        <h4>4.exportselection</h4>
+        <p>Normally, text selected within a text widget is exported to be the selection in the window manager. Set exportselection=0 if you don't want that behavior.</p>
+        <p> </p>
+        <h4>5.font</h4>
+        <p>The default font for text inserted into the widget.</p>
+        <p> </p>
+        <h4>6.fg</h4>
+        <p>The color used for text (and bitmaps) within the widget. You can change the color for tagged regions; this option is just the default.</p>
+        <p> </p>
+        <h4>7.height</h4>
+        <p>The height of the widget in lines (not pixels!), measured according to the current font size.</p>
+        <p> </p>
+        <h4>8.highlightbackground</h4>
+        <p>The color of the focus highlight when the text widget does not have focus.</p>
+        <p> </p>
+        <h4>9.highlightcolor</h4>
+        <p>The color of the focus highlight when the text widget has the focus.</p>
+        <p> </p>
+        <h4>10.highlightthickness</h4>
+        <p>The thickness of the focus highlight. Default is 1. Set highlightthickness=0 to suppress display of the focus highlight.</p>
+        <p> </p>
+        <h4>11.insertbackground</h4>
+        <p>The color of the insertion cursor. Default is black.</p>
+        <p> </p>
+        <h4>12.insertborderwidth</h4>
+        <p>Size of the 3-D border around the insertion cursor. Default is 0.</p>
+        <p> </p>
+        <h4>13.insertofftime</h4>
+        <p>The number of milliseconds the insertion cursor is off during its blink cycle. Set this option to zero to suppress blinking. Default is 300.</p>
+        <p> </p>
+        <h4>14.insertontime</h4>
+        <p>The number of milliseconds the insertion cursor is on during its blink cycle. Default is 600.</p>
+        <p> </p>
+        <h4>15.insertwidth</h4>
+        <p>Width of the insertion cursor (its height is determined by the tallest item in its line). Default is 2 pixels.</p>
+        <p> </p>
+        <h4>16.padx</h4>
+        <p>The size of the internal padding added to the left and right of the text area. Default is one pixel.</p>
+        <p> </p>
+        <h4>17.pady</h4>
+        <p>The size of the internal padding added above and below the text area. Default is one pixel.</p>
+        <p> </p>
+        <h4>18.relief</h4>
+        <p>The 3-D appearance of the text widget. Default is relief=SUNKEN.</p>
+        <p> </p>
+        <h4>19.selectbackground</h4>
+        <p>The background color to use displaying selected text.</p>
+        <p> </p>
+        <h4>20.selectborderwidth</h4>
+        <p>The width of the border to use around selected text.</p>
+        <p> </p>
+        <h4>21.spacing1</h4>
+        <p>This option specifies how much extra vertical space is put above each line of text. If a line wraps, this space is added only before the first line it occupies on the display. Default is 0.</p>
+        <p> </p>
+        <h4>22.spacing2</h4>
+        <p>This option specifies how much extra vertical space to add between displayed lines of text when a logical line wraps. Default is 0.</p>
+        <p> </p>
+        <h4>23.spacing3</h4>
+        <p>This option specifies how much extra vertical space is added below each line of text. If a line wraps, this space is added only after the last line it occupies on the display. Default is 0.</p>
+        <p> </p>
+        <h4>24.state</h4>
+        <p>Normally, text widgets respond to keyboard and mouse events; set state=NORMAL to get this behavior. If you set state=DISABLED, the text widget will not respond, and you won't be able to modify its contents programmatically either.</p>
+        <p> </p>
+        <h4>25.tabs</h4>
+        <p>This option controls how tab characters position text.</p>
+        <p> </p>
+        <h4>26.width</h4>
+        <p>The width of the widget in characters (not pixels!), measured according to the current font size.</p>
+        <p> </p>
+        <h4>27.wrap</h4>
+        <p>This option controls the display of lines that are too wide. Set wrap=WORD and it will break the line after the last word that will fit. With the default behavior, wrap=CHAR, any line that gets too long will be broken at any character.</p>
+        <p> </p>
+        <h4>28.xscrollcommand</h4>
+        <p>To make the text widget horizontally scrollable, set this option to the set() method of the horizontal scrollbar.</p>
+        <p> </p>
+        <h4>29.yscrollcommand</h4>
+        <p>To make the text widget vertically scrollable, set this option to the set() method of the vertical scrollbar.</p>
+        <p> </p>
+        
+    </div>
+    <div id='fourth'>
+        <h2>Methods</h2>
+        <hr>
+        <h2>delete(startindex [,endindex])</h2>
+        <p>This method deletes a specific character or a range of text.</p>
+        <h2>get(startindex [,endindex])</h2>
+        <p>This method returns a specific character or a range of text.</p>
+        <h2>index(index)</h2>
+        <p>Returns the absolute value of an index based on the given index.</p>
+        <h2>insert(index [,string]...)</h2>
+        <p>This method inserts strings at the specified index location.</p>
+        <h2>see(index)</h2>
+        <p>This method returns true if the text located at the index position is visible.</p>
+        <hr>
+        <p>Text widgets support three distinct helper structures: Marks, Tabs, and Indexes-</p>
+        <p>Marks are used to bookmark positions between two characters within a given text. We have the following methods available when handling marks:</p>
+        <h2>index(mark)</h2>
+        <p>Returns the line and column location of a specific mark.</p>
+        <h2>mark_gravity(mark [,gravity])</h2>
+        <p>Returns the gravity of the given mark. If the second argument is provided, the gravity is set for the given mark.</p>
+        <h2>mark_names()</h2>
+        <p>Returns all marks from the Text widget.</p>
+        <h2>mark_set(mark, index)</h2>
+        <p>Informs a new position to the given mark.</p>
+        <h2>mark_unset(mark)</h2>
+        <p>Removes the given mark from the Text widget.</p>
+        <hr>
+        <p>Tags are used to associate names to regions of text which makes easy the task of modifying the display settings of specific text areas. Tags are also used to bind event callbacks to specific ranges of text.</p>
+        <p>Following are the available methods for handling tabs-</p>
+        <h2>tag_add(tagname, startindex[,endindex] ...)</h2>
+        <p>This method tags either the position defined by startindex, or a range delimited by the positions startindex and endindex.</p>
+        <h2>tag_config</h2>
+        <p>You can use this method to configure the tag properties, which include, justify(center, left, or right), tabs(this property has the same functionality of the Text widget tabs's property), and underline(used to underline the tagged text).</p>
+        <h2>tag_delete(tagname)</h2>
+        <p>This method is used to delete and remove a given tag.</p>
+        <h2>tag_remove(tagname [,startindex[.endindex]] ...)</h2>
+        <p>After applying this method, the given tag is removed from the provided area without deleting the actual tag definition.</p>
+
+     </div>
+     
+  </div>
+</body>    
+</html>

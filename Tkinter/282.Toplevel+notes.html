@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>Tkinter Toplevel</title>
+    <style type='text/css'>
+        #main{
+                height:3000;
+                widht:95%;
+                background-color:peachpuff;
+                margin:20px;
+                border-radius:20px;
+                padding:20px;
+                 }
+        #first{
+                height:500;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #third{
+                height:830;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #fourth{
+                height:1300;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        
+    </style>
+</head>
+<body>
+    <div id='main'>
+    <div id='first'>
+        <h2>Tkinter Toplevel</h2>
+        <hr>
+        <p>Toplevel widgets work as windows that are directly managed by the window manager. They do not necessarily have a parent widget on top of them.</p>
+        <p>Your application can use any number of top-level windows</p>
+        <h4>Syntax:</h4>
+        <p>Here is the simple syntax to create this widget-</p>
+        
+        <p>w = Toplevel ( option, ... )</p>
+        <hr>
+        <h3>Parameters:</h3>
+        <h4>master:</h4>
+        <p>This represents the parent window.</p>
+        <h4>options:</h4>
+        <p>Here is the list of most commonly used options for this widget in the next page given below. These options can be used as key-value pairs separated by commas.
+        </p>
+    </div>
+    <div id='third'>
+        <h2>Options available and their description</h2>
+        <hr>
+        <h4>1.bg</h4>
+        <p>The background color of the window.</p>
+        <p> </p>
+        <h4>2.bd</h4>
+        <p>Border width in pixels; default is 0.</p>
+        <p> </p>
+        <h4>3.cursor</h4>
+        <p>The cursor that appears when the mouse is in this window.</p>
+        <p> </p>
+        <h4>4.class_</h4>
+        <p>Normally, text selected within a text widget is exported to be the selection in the window manager. Set exportselection=0 if you don't want that behavior.</p>
+        <p> </p>
+        <h4>5.font</h4>
+        <p>The default font for text inserted into the widget.</p>
+        <p> </p>
+        <h4>6.fg</h4>
+        <p>The color used for text (and bitmaps) within the widget. You can change the color for tagged regions; this option is just the default.</p>
+        <p> </p>
+        <h4>7.height</h4>
+        <p>Window height.</p>
+        <p> </p>
+        <h4>8.relief</h4>
+        <p>Normally, a top-level window will have no 3-d borders around it. To get a shaded border, set the bd option larger that its default value of zero, and set the relief option to one of the constants.</p>
+        <p> </p>
+        <h4>9.width</h4>
+        <p>The desired width of the window.</p>
+        <p> </p>
+    </div>
+    <div id='fourth'>
+        <h2>Methods</h2>
+        <hr>
+        <h2>deiconify()</h2>
+        <p>Displays the window, after using either the iconify or the withdraw methods.</p>
+        <h2>frame()</h2>
+        <p>Returns a system-specific window identifier.</p>
+        <h2>group(window)</h2>
+        <p>Adds the window to the window group administered by the given window.</p>
+        <h2>iconify()</h2>
+        <p>Turns the window into an icon, without destroying it.</p>
+        <h2>protocol(name, function)</h2>
+        <p>Registers a function as a callback which will be called for the given protocol.</p>
+        <h2>state()</h2>
+        <p>Returns the current state of the window. Possible values are normal, iconic, withdrawn and icon.</p>
+        <h2>transient([master])</h2>
+        <p>Turns the window into a temporary(transient) window for the given master or to the window's parent, when no argument is given.</p>
+        <h2>withdraw()</h2>
+        <p>Removes the window from the screen, without destroying it.</p>
+        <h2>maxsize(width, height)</h2>
+        <p>Defines the maximum size for this window.</p>
+        <h2>minsize(width, height)
+</h2>
+        <p>Defines the minimum size for this window.</p>
+        <h2>positionfrom(who)</h2>
+        <p>Defines the position controller.</p>
+        <h2>resizable(width, height)</h2>
+        <p>Defines the resize flags, which control whether the window can be resized.</p>
+        <h2>sizefrom(who)</h2>
+        <p>Defines the size controller.</p>
+        <h2>title(string)</h2>
+        <p>Defines the window title.</p>
+     </div>
+     
+  </div>
+</body>    
+</html>

@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>Tkinter Menu</title>
+    <style type='text/css'>
+        #main{
+                height:3400;
+                widht:95%;
+                background-color:peachpuff;
+                margin:20px;
+                border-radius:20px;
+                padding:20px;
+                 }
+        #first{
+                height:550;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #third{
+                height:1330;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #fourth{
+                height:1150;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        
+    </style>
+</head>
+<body>
+    <div id='main'>
+    <div id='first'>
+        <h2>Tkinter Menu</h2>
+        <hr>
+        <p>The goal of this widget is to allow us to create all kinds of menus that can be used by our applications. The core functionality provides ways to create three menu types: pop-up, toplevel and pull-down.
+</p>
+        <p>It is also possible to use other extended widgets to implement new types of menus, such as the OptionMenu widget, which implements a special type that generates a pop-up list of items within a selection.</p>
+        <h4>Syntax:</h4>
+        <p>Here is the simple syntax to create this widget-</p>
+        
+        <p> w = Menu ( master, option, ... )</p>
+        <hr>
+        <h3>Parameters:</h3>
+        <h4>master:</h4>
+        <p>This represents the parent window.</p>
+        <h4>options:</h4>
+        <p>Here is the list of most commonly used options for this widget in the next page given below. These options can be used as key-value pairs separated by commas.
+        </p>
+    </div>
+    <div id='third'>
+        <h2>Options available and their description</h2>
+        <hr>
+        <h4>1.activebackground</h4>
+        <p>The background color that will appear on a choice when it is under the mouse.</p>
+        <p> </p>
+        <h4>2.activeborderwidth</h4>
+        <p>Specifies the width of a border drawn around a choice when it is under the mouse. Default is 1 pixel.</p>
+        <p> </p>
+        <h4>3.activeforeground</h4>
+        <p>The foreground color that will appear on a choice when it is under the mouse.</p>
+        <p> </p>
+        <h4>4.bg</h4>
+        <p>The background color for choices not under the mouse.</p>
+        <p> </p>
+        <h4>5.bd</h4>
+        <p>The width of the border around all the choices. Default is 1.</p>
+        <p> </p>
+        <h4>6.cursor</h4>
+        <p>The cursor that appears when the mouse is over the choices, but only when the menu has been torn off.</p>
+        <p> </p>
+        <h4>7.disabledforeground</h4>
+        <p>The color of the text for items whose state is DISABLED.</p>
+        <p> </p>
+        <h4>8.font</h4>
+        <p>The default font for textual choices.</p>
+        <p> </p>
+        <h4>9.fg</h4>
+        <p>The foreground color used for choices not under the mouse.</p>
+        <p> </p>
+        <h4>10.postcommand</h4>
+        <p>You can set this option to a procedure, and that procedure will be called every time someone brings up this menu.</p>
+        <p> </p>
+        <h4>11.relief</h4>
+        <p>The default 3-D effect for menus is relief=RAISED.</p>
+        <p> </p>
+        <h4>12.image</h4>
+        <p> To display an image on this menubutton.</p>
+        <p> </p>
+        <h4>13.selectcolor</h4>
+        <p>Specifies the color displayed in checkbuttons and radiobuttons when they are selected.</p>
+        <p> </p>
+        <h4>14.tearoff</h4>
+        <p>Normally, a menu can be torn off, the first position (position 0) in the list of choices is occupied by the tear-off element, and the additional choices are added starting at position 1. If you set tearoff=0, the menu will not have a tear-off feature, and choices will be added starting at position 0.</p>
+        <p> </p>
+        <h4>15.title</h4>
+        <p>Normally, the title of a tear-off menu window will be the same as the text of the menubutton or cascade that lead to this menu. If you want to change the title of that window, set the title option to that string.</p>
+        <p> </p>
+    </div>
+    <div id='fourth'>
+        <h2>Method</h2>
+        <hr>
+        <h2>add_command (options)</h2>
+        <p>Adds a menu item to the menu.</p>
+        <h2>add_radiobutton( options )</h2>
+        <p>Creates a radio button menu item.</p>
+        <h2>add_checkbutton( options )</h2>
+        <p>Creates a check button menu item.</p>
+        <h2>add_cascade(options)</h2>
+        <p>Creates a new hierarchical menu by associating a given menu to a parent menu</p>
+        <h2>add_separator()</h2>
+        <p>Adds a separator line to the menu.</p>
+        <h2>add( type, options )</h2>
+        <p>Adds a specific type of menu item to the menu.</p>
+        <h2>delete( startindex [, endindex ])</h2>
+        <p>Deletes the menu items ranging from startindex to endindex.</p>
+        <h2>entryconfig( index, options )</h2>
+        <p>Allows you to modify a menu item, which is identified by the index, and change its options.</p>
+        <h2>index(item)</h2>
+        <p>Returns the index number of the given menu item label.</p>
+        <h2>insert_separator ( index )</h2>
+        <p>Insert a new separator at the position specified by index.</p>
+        <h2>invoke ( index )</h2>
+        <p>Calls the command callback associated with the choice at position index. If a checkbutton, its state is toggled between set and cleared; if a radiobutton, that choice is set.</p>
+        <h2>type ( index )</h2>
+        <p>Returns the type of the choice specified by index: either "cascade", "checkbutton", "command", "radiobutton", "separator", or "tearoff".</p>
+     </div>
+     
+  </div>
+</body>    
+</html>

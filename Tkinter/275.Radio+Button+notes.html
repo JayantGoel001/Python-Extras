@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Tkinter Radio Button</title>
+    <style type='text/css'>
+        #main{
+                height:3720;
+                widht:95%;
+                background-color:peachpuff;
+                margin:20px;
+                border-radius:20px;
+                padding:20px;
+                 }
+        #first{
+                height:550;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #third{
+                height:2370;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #fourth{
+                height:440;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        
+    </style>
+</head>
+<body>
+    <div id='main'>
+    <div id='first'>
+        <h2>Tkinter Radio Button</h2>
+        <hr>
+        <p>This widget implements a multiple-choice button, which is a way to offer many possible selections to the user and lets user choose only one of them.
+        </p>
+        <p>In order to implement this functionality, each group of radiobuttons must be associated to the same variable and each one of the buttons must symbolize a single value. You can use the Tab key to switch from one radionbutton to another.
+        </p>
+        <h4>Syntax:</h4>
+        <p>Here is the simple syntax to create this widget-</p>
+        
+        <p>w = Radiobutton ( master, option, ... )</p>
+        <hr>
+        <h3>Parameters:</h3>
+        <h4>master:</h4>
+        <p>This represents the parent window.</p>
+        <h4>options:</h4>
+        <p>Here is the list of most commonly used options for this widget in the next page given below. These options can be used as key-value pairs separated by commas.
+        </p>
+    </div>
+    <div id='third'>
+        <h2>Options available and their description</h2>
+        <hr>
+        <h4>1.activebackground</h4>
+        <p>The background color when the mouse is over the radiobutton.</p>
+        <p> </p>
+        <h4>2.activeforeground</h4>
+        <p>The foreground color when the mouse is over the radiobutton.</p>
+        <p> </p>
+        <h4>3.anchor</h4>
+        <p>If the widget inhabits a space larger than it needs, this option specifies where the radiobutton will sit in that space. The default is anchor=CENTER.</p>
+        <p> </p>
+        <h4>4.bg</h4>
+        <p>The normal background color behind the indicator and label.</p>
+        <p> </p>
+        <h4>5.bitmap</h4>
+        <p>To display a monochrome image on a radiobutton, set this option to a bitmap.</p>
+        <p> </p>
+        <h4>6.borderwidth</h4>
+        <p>The size of the border around the indicator part itself. Default is 2 pixels.</p>
+        <p> </p>
+        <h4>7.command</h4>
+        <p>A procedure to be called every time the user changes the state of this radiobutton.</p>
+        <p> </p>
+        <h4>8.cursor</h4>
+        <p>If you set this option to a cursor name (arrow, dot etc.), the mouse cursor will change to that pattern when it is over the radiobutton.</p>
+        <p> </p>
+        <h4>9.font</h4>
+        <p>The font used for the text.</p>
+        <p> </p>
+        <h4>10.fg</h4>
+        <p>The color used to render the text.</p>
+        <p> </p>
+        <h4>11.height</h4>
+        <p>The number of lines (not pixels) of text on the radiobutton. Default is 1.</p>
+        <p> </p>
+        <h4>12.highlightbackground</h4>
+        <p>The color of the focus highlight when the radiobutton does not have focus.</p>
+        <p> </p>
+        <h4>13.highlightcolor</h4>
+        <p>The color of the focus highlight when the radiobutton has the focus.</p>
+        <p> </p>
+        <h4>14.image</h4>
+        <p>To display a graphic image instead of text for this radiobutton, set this option to an image object.</p>
+        <p> </p>
+        <h4>15.justify</h4>
+        <p>If the text contains multiple lines, this option controls how the text is justified: CENTER (the default), LEFT, or RIGHT.</p>
+        <p> </p>
+        <h4>16.padx</h4>
+        <p>How much space to leave to the left and right of the radiobutton and text. Default is 1.</p>
+        <p> </p>
+        <h4>17.pady</h4>
+        <p>How much space to leave above and below the radiobutton and text. Default is 1.</p>
+        <p> </p>
+        <h4>18.relief</h4>
+        <p>Specifies the appearance of a decorative border around the label. The default is FLAT; for other values.</p>
+        <p> </p>
+        <h4>19.selectcolor</h4>
+        <p>The color of the radiobutton when it is set. Default is red.</p>
+        <p> </p>
+        <h4>20.selectimage</h4>
+        <p>If you are using the image option to display a graphic instead of text when the radiobutton is cleared, you can set the selectimage option to a different image that will be displayed when the radiobutton is set.</p>
+        <p> </p>
+        <h4>21.state</h4>
+        <p>The default is state=NORMAL, but you can set state=DISABLED to gray out the control and make it unresponsive. If the cursor is currently over the radiobutton, the state is ACTIVE.</p>
+        <p> </p>
+        <h4>22.text</h4>
+        <p>The label displayed next to the radiobutton. Use newlines ("\n") to display multiple lines of text.</p>
+        <p> </p>
+        <h4>23.textvariable</h4>
+        <p>To slave the text displayed in a label widget to a control variable of class StringVar, set this option to that variable.</p>
+        <p> </p>
+        <h4>24.underline</h4>
+        <p>You can display an underline (_) below the nth letter of the text, counting from 0, by setting this option to n. The default is underline=-1, which means no underlining.</p>
+        <p> </p>
+        <h4>25.value</h4>
+        <p>When a radiobutton is turned on by the user, its control variable is set to its current value option. If the control variable is an IntVar, give each radiobutton in the group a different integer value option. If the control variable is aStringVar, give each radiobutton a different string value option.</p>
+        <p> </p>
+        <h4>26.variable</h4>
+        <p>The control variable that this radiobutton shares with the other radiobuttons in the group. This can be either an IntVar or a StringVar.</p>
+        <p> </p>
+        <h4>27.width</h4>
+        <p>Width of the label in characters (not pixels!). If this option is not set, the label will be sized to fit its contents.</p>
+        <p> </p>
+        <h4>28.wraplength</h4>
+        <p>You can limit the number of characters in each line by setting this option to the desired number. The default value, 0, means that lines will be broken only at newlines</p>
+        <p> </p>
+    </div>
+    <div id='fourth'>
+        <h2>Method</h2>
+        <hr>
+        <h2>deselect()</h2>
+        <p>Clears (turns off) the radiobutton</p>
+        <h2>flash()</h2>
+        <p>Flashes the radiobutton a few times between its active and normal colors, but leaves it the way it started.</p>
+        <h2>invoke()</h2>
+        <p>You can call this method to get the same actions that would occur if the user clicked on the radiobutton to change its state.</p>
+        <h2>select()</h2>
+        <p>Sets (turns on) the radiobutton.</p>
+     </div>
+     
+  </div>
+</body>    
+</html>

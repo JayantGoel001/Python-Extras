@@ -1,0 +1,273 @@
+<html>
+<head>
+    <title>Tkinter Attributes</title>
+    <style type='text/css'>
+        #main{
+                height:4860;
+                widht:95%;
+                background-color:peachpuff;
+                margin:20px;
+                border-radius:20px;
+                padding:20px;
+                 }
+        #first{
+                height:300;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #third{
+                height:820;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #fourth{
+                height:410;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #five{
+                height:720;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #six{
+                height:500;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #seven{
+                height:300;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #eight{
+                height:350;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #nine{
+                height:560;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        
+    </style>
+</head>
+<body>
+    <div id='main'>
+    <div id='first'>
+        <h2>Standard Attributes</h2>
+        <hr>
+        <p>Let us look at how some of the common attributes, such as sizes, colors and fonts are specified.</p>
+        <p></p>
+        <ul>
+            <li>Dimensions</li>
+            <li>Colors</li>
+            <li>Fonts</li>
+            <li>Anchors</li>
+            <li>Relief styles</li>
+            <li>Bitmaps</li>
+            <li>Cursors</li>
+        </ul>
+    </div>
+    <div id='third'>
+        <h2>Tkinter Dimensions</h2>
+        <hr>
+        <p>Various lengths, widths, and other dimensions of widgets can be described in many different units.</p>
+        <ul>
+            <li>If you set a dimension to an integer, it is assumed to be in pixels.</li>
+            <li>You can specify units by setting a dimension to a string containing a number followed by.</li>
+        </ul>
+        <h3>Character and their description</h3>
+        <h4>1.c</h4>
+        <p>Centimeters</p>
+        <p> </p>
+        <h4>2.i</h4>
+        <p>Inches</p>
+        <p> </p>
+        <h4>3.m</h4>
+        <p>Millimeters</p>
+        <p> </p>
+        <h4>4.p</h4>
+        <p>Printer's points (about 1/72")</p>
+        <p> </p>
+        <hr>
+        <h2>Length options</h2>
+        <hr>
+        <p>Tkinter expresses a length as an integer number of pixels. Here is the list of common length options-
+        </p>
+        <ul>
+            <li><b>borderwidth: </b>Width of the border which gives a three-dimensional look to the widget.
+            </li>
+            <li><b>highlightthickness: </b>Width of the highlight rectangle when the widget has focus .</li>
+            <li><b>padX padY:</b> Extra space the widget requests from its layout manager beyond the minimum the widget needs to display its contents in the x and y directions.</li>
+            <li><b>selectborderwidth:</b>Width of the three-dimentional border around selected items of the widget.</li>
+            <li><b>wraplength:</b>Maximum line length for widgets that perform word wrapping.</li>
+            <li><b>height: </b> Desired height of the widget; must be greater than or equal to 1.</li>
+            <li><b>underline:</b>Index of the character to underline in the widget's text (0 is the first character, 1 the second one, and so on).</li>
+            <li><b>width:</b>Desired width of the widget.</li>
+        </ul>
+    </div>
+    <div id='fourth'>
+        <h2>Tkinter Colors</h2>
+        <hr>
+        <p>Tkinter represents colors with strings. There are two general ways to specify colors in Tkinter-
+        </p>
+        <ul>
+            <li>You can use a string specifying the proportion of red, green and blue in hexadecimal digits. For example, "#fff" is white, "#000000" is black, "#000fff000" is pure green, and "#00ffff" is pure cyan (green plus blue).</li>
+            <li>You can also use any locally defined standard color name. The colors "white", "black", "red", "green", "blue", "cyan", "yellow", and "magenta" will always be available.</li>
+        </ul>
+        <h3>Color Options</h3>
+        <ul>
+            <li><b>activebackground: </b> Background color for the widget when the widget is active.</li>
+            <li><b>activeforeground: </b>Foreground color for the widget when the widget is active.</li>
+            <li><b>background: </b>Background color for the widget. This can also be represented as bg.</li>
+            <li><b>disabledforeground:</b>Foreground color for the widget when the widget is disabled.
+            </li>
+            <li><b>foreground:</b>Foreground color for the widget. This can also be represented as fg.
+            </li>
+            <li><b>highlightbackground:</b>Background color of the highlight region when the widget has focus.</li>
+            <li><b>highlightcolor: </b>Foreground color of the highlight region when the widget has focus.</li>
+            <li><b>selectbackground:</b>Background color for the selected items of the widget.</li>
+            <li><b>selectforeground: </b>Foreground color for the selected items of the widget.</li>
+        </ul>
+    </div>
+    <div id='five'>
+        <h2>Tkinter Fonts</h2>
+        <hr>
+        <p>There may be up to three ways to specify type style.</p>
+        <h3>Simple Tuple Fonts</h3>
+        <hr>
+        <p>As a tuple whose first element is the font family, followed by a size in points, optionally followed by a string containing one or more of the style modifiers bold, italic, underline and overstrike.</p>
+        <p>Example:</p>
+        <ul>
+            <li>("Helvetica", "16") for a 16-point Helvetica regular.</li>
+            <li>("Times", "24", "bold italic") for a 24-point Times bold italic.</li>
+        </ul>
+        <h3>Font object Fonts</h3>
+        <p>You can create a "font object" by importing the tkFont module and using its Font class constructor −</p>
+        <p>import tkFont</p>
+        <p>font = tkFont.Font ( option, ... )</p>
+        <p> </p>
+        <p>Here is the list of options- </p>
+        <ul>
+            <li><b>family:</b> The font family name as a string.</li>
+            <li><b>size:</b> The font height as an integer in points. To get a font n pixels high, use -n.</li>
+            <li><b>weight:</b> "bold" for boldface, "normal" for regular weight.
+            </li>
+            <li><b>slant:</b> "italic" for italic, "roman" for unslanted.</li>
+            <li><b>underline:</b> 1 for underlined text, 0 for normal.</li>
+            <li><b>overstrike:</b> 1 for overstruck text, 0 for normal.</li>
+        </ul>
+        <h4>Example</h4>
+        <p>helv36 = tkFont.Font(family="Helvetica",size=36,weight="bold")</p>
+     </div>
+    <div id='six'>
+        <h2>Tkinter Anchors</h2>
+        <hr>
+        <p>Anchors are used to define where text is positioned relative to a reference point. Here is list of possible constants, which can be used for Anchor attribute.</p>
+        <ul>
+            <li><b></b>NW</li>
+            <li><b></b>N</li>
+            <li><b></b>NE</li>
+            <li><b></b>W</li>
+            <li><b></b>CENTER</li>
+            <li><b></b>E</li>
+            <li><b></b>SW</li>
+            <li><b></b>S</li>
+            <li><b></b>SE</li>
+        </ul>
+        <p>For example, if you use CENTER as a text anchor, the text will be centered horizontally
+        and vertically around the reference point.</p>
+        <p>Anchor NW will position the text so that the reference point coincides with the northwest (top left) corner of the box containing the text.</p>
+        <p>Anchor W will center the text vertically around the reference point, with the left edge of the text box passing through that point, and so on.</p>
+        <p>If you create a small widget inside a large frame and use the anchor=SE option, the widget will be placed in the bottom right corner of the frame. If you used anchor=N instead, the widget would be centered along the top edge.</p>
+     </div>
+     <div id='seven'>
+        <h2>Tkinter Relief styles</h2>
+        <hr>
+        <p>The relief style of a widget refers to certain simulated 3-D effects around the outside of the widget. </p>
+        <p>Here is list of possible constants which can be used for relief attribute-
+        </p>
+        <ul>
+            <li><b></b>FLAT</li>
+            <li><b></b>RAISED</li>
+            <li><b></b>SUNKEN</li>
+            <li><b></b>GROOVE</li>
+            <li><b></b>RIDGE</li>
+        </ul>
+    </div>
+    <div id='eight'>
+        <h2>Tkinter Bitmaps</h2>
+        <hr>
+        <p>This attribute to displays a bitmap. There are following type of bitmaps available-</p>
+        <ul>
+            <li><b></b>"error"</li>
+            <li><b></b>"gray75"</li>
+            <li><b></b>"gray50"</li>
+            <li><b></b>"gray12"</li>
+            <li><b></b>"hourglass"</li>
+            <li><b></b>"info"</li>
+            <li><b></b>"questhead"</li>
+            <li><b></b>"question"</li>
+            <li><b></b>"warning"</li>
+        </ul>
+    </div>
+    <div id='nine'>
+        <h2>Tkinter Cursors</h2>
+        <hr>
+        <p>Python Tkinter supports quite a number of different mouse cursors available. The exact graphic may vary according to your operating system.</p>
+        <p>Here is the list of interesting ones-</p>
+        <ul>
+            <li>"arrow"</li>
+            <li>"circle"</li>
+            <li>"clock"</li>
+            <li>"cross"</li>
+            <li>"dotbox"</li>
+            <li>"exchange"</li>
+            <li>"fleur"</li>
+            <li>"heart"</li>
+            <li>"man"</li>
+            <li>"mouse"</li>
+            <li>"pirate"</li>
+            <li>"plus"</li>
+            <li>"shuttle"</li>
+            <li>"sizing"</li>
+            <li>"spider"</li>
+            <li>"spraycan"</li>
+            <li>"star"</li>
+            <li>"target"</li>
+            <li>"tcross"</li>
+            <li>"trek"</li>
+            <li>"watch"</li>
+        </ul>
+    </div>
+        
+     
+  </div>
+</body>    
+</html>

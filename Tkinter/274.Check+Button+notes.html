@@ -1,0 +1,162 @@
+<html>
+<head>
+    <title>Tkinter Checkbutton</title>
+    <style type='text/css'>
+        #main{
+                height:3750;
+                widht:95%;
+                background-color:peachpuff;
+                margin:20px;
+                border-radius:20px;
+                padding:20px;
+                 }
+        #first{
+                height:500;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #third{
+                height:2300;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #fourth{
+                height:600;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        
+    </style>
+</head>
+<body>
+    <div id='main'>
+    <div id='first'>
+        <h2>Tkinter Checkbutton</h2>
+        <hr>
+        <p>The Checkbutton widget is used to display a number of options to a user as toggle buttons. The user can then select one or more options by clicking the button corresponding to each option.</p>
+        <p>You can also display images in place of text.</p>
+        <p></p>
+        <h4>Syntax:</h4>
+        <p>Here is the simple syntax to create this widget-</p>
+        
+        <p>w = Checkbutton ( master, option, ... )</p>
+        <hr>
+        <h3>Parameters:</h3>
+        <h4>master:</h4>
+        <p>This represents the parent window.</p>
+        <h4>options:</h4>
+        <p>Here is the list of most commonly used options for this widget in the next page given below. These options can be used as key-value pairs separated by commas.
+        </p>
+    </div>
+    <div id='third'>
+        <h2>Options available and their description</h2>
+        <hr>
+        <h4>1.activebackground</h4>
+        <p>Background color when the checkbutton is under the cursor.</p>
+        <p> </p>
+        <h4>2.activeforeground</h4>
+        <p>Foreground color when the checkbutton is under the cursor.</p>
+        <p> </p>
+        <h4>3.bg</h4>
+        <p>The normal background color displayed behind the label and indicator.</p>
+        <p> </p>
+        <h4>4.bitmap</h4>
+        <p>To display a monochrome image on a button.</p>
+        <p> </p>
+        <h4>5.bd</h4>
+        <p>The size of the border around the indicator. Default is 2 pixels.</p>
+        <p> </p>
+        <h4>6.command</h4>
+        <p>A procedure to be called every time the user changes the state of this checkbutton.</p>
+        <p> </p>
+        <h4>7.cursor</h4>
+        <p>If you set this option to a cursor name (arrow, dot etc.), the mouse cursor will change to that pattern when it is over the checkbutton.</p>
+        <p> </p>
+        <h4>8.disabledforeground</h4>
+        <p>The foreground color used to render the text of a disabled checkbutton. The default is a stippled version of the default foreground color.</p>
+        <p> </p>
+        <h4>9.font</h4>
+        <p>The font used for the text.</p>
+        <p> </p>
+        <h4>10.fg</h4>
+        <p>The color used to render the text.</p>
+        <p> </p>
+        <h4>11.height</h4>
+        <p>The number of lines of text on the checkbutton. Default is 1.</p>
+        <p> </p>
+        <h4>12.highlightcolor</h4>
+        <p>The color of the focus highlight when the checkbutton has the focus.</p>
+        <p> </p>
+        <h4>13.image</h4>
+        <p>To display a graphic image on the button.</p>
+        <p> </p>
+        <h4>14.justify</h4>
+        <p>If the text contains multiple lines, this option controls how the text is justified: CENTER, LEFT, or RIGHT.</p>
+        <p> </p>
+        <h4>15.offvalue</h4>
+        <p>Normally, a checkbutton's associated control variable will be set to 0 when it is cleared (off). You can supply an alternate value for the off state by setting offvalue to that value.</p>
+        <p> </p>
+        <h4>16.onvalue</h4>
+        <p>Normally, a checkbutton's associated control variable will be set to 1 when it is set (on). You can supply an alternate value for the on state by setting onvalue to that value.</p>
+        <p> </p>
+        <h4>17.padx</h4>
+        <p>How much space to leave to the left and right of the checkbutton and text. Default is 1 pixel.</p>
+        <p> </p>
+        <h4>18.pady</h4>
+        <p>How much space to leave above and below the checkbutton and text. Default is 1 pixel.</p>
+        <p> </p>
+        <h4>19.relief</h4>
+        <p>With the default value, relief=FLAT, the checkbutton does not stand out from its background. You may set this option to any of the other styles</p>
+        <p> </p>
+        <h4>20.selectcolor </h4>
+        <p>The color of the checkbutton when it is set. Default is selectcolor="red". </p>
+        <p> </p>
+        <h4>21.selectimage </h4>
+        <p>If you set this option to an image, that image will appear in the checkbutton when it is set. </p>
+        <p> </p>
+        <h4>22.state </h4>
+        <p>The default is state=NORMAL, but you can use state=DISABLED to gray out the control and make it unresponsive. If the cursor is currently over the checkbutton, the state is ACTIVE. </p>
+        <p> </p>
+        <h4>23.text </h4>
+        <p>The label displayed next to the checkbutton. Use newlines ("\n") to display multiple lines of text. </p>
+        <p> </p>
+        <h4>24.underline </h4>
+        <p>With the default value of -1, none of the characters of the text label are underlined. Set this option to the index of a character in the text (counting from zero) to underline that character.</p>
+        <p> </p>
+        <h4>25.variable </h4>
+        <p>The control variable that tracks the current state of the checkbutton. Normally this variable is an IntVar, and 0 means cleared and 1 means set, but see the offvalue and onvalue options above. </p>
+        <p> </p>
+        <h4>26.width </h4>
+        <p>The default width of a checkbutton is determined by the size of the displayed image or text. You can set this option to a number of characters and the checkbutton will always have room for that many characters. </p>
+        <p> </p>
+        <h4>27.wraplength </h4>
+        <p>Normally, lines are not wrapped. You can set this option to a number of characters and all lines will be broken into pieces no longer than that number. </p>
+        <p> </p>
+    </div>
+    <div id='fourth'>
+        <h2>Methods</h2>
+        <hr>
+        <h2>deselect()</h2>
+        <p>Clears (turns off) the checkbutton.</p>
+        <h2>flash()</h2>
+        <p>Flashes the checkbutton a few times between its active and normal colors, but leaves it the way it started.</p>
+        <h2>invoke()</h2>
+        <p>You can call this method to get the same actions that would occur if the user clicked on the checkbutton to change its state.</p>
+        <h2>select()</h2>
+        <p>Sets (turns on) the checkbutton.</p>
+        <h2>toggle()</h2>
+        <p>Clears the checkbutton if set, sets it if cleared.</p>
+     </div>
+     
+  </div>
+</body>    
+</html>

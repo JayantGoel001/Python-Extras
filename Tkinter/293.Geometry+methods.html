@@ -1,0 +1,122 @@
+<html>
+<head>
+    <title>Tkinter Geometry management</title>
+    <style type='text/css'>
+        #main{
+                height:1840;
+                widht:95%;
+                background-color:peachpuff;
+                margin:20px;
+                border-radius:20px;
+                padding:20px;
+                 }
+        #first{
+                height:220;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #third{
+                height:350;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #fourth{
+                height:410;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #five{
+                height:410;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+    </style>
+</head>
+<body>
+    <div id='main'>
+    <div id='first'>
+        <h2>Geometry Management</h2>
+        <hr>
+        <p>All Tkinter widgets have access to the specific geometry management methods, which have the purpose of organizing widgets throughout the parent widget area. Tkinter exposes the following geometry manager classes: pack, grid, and place.</p>
+        <p> </p>
+        <ul>
+            <li><b>The pack() Method -</b> This geometry manager organizes widgets in blocks before placing them in the parent widget.
+            </li>
+            <li><b>The grid() Method - </b> This geometry manager organizes widgets in a table-like structure in the parent widget.
+            </li>
+            <li><b>The place() Method -</b> This geometry manager organizes widgets by placing them in a specific position in the parent widget.</li>
+        </ul>
+        <p></p>
+    </div>
+    <div id='third'>
+        <h2>Tkinter pack() Method</h2>
+        <hr>
+        <p>This geometry manager organizes widgets in blocks before placing them in the parent widget.</p>
+        <h4>Syntax</h4>
+        <p>widget.pack( pack_options )</p>
+        <p>Here is the list of possible options-
+        </p>
+        <ul>
+            <li><b>expand: </b>When set to true, widget expands to fill any space not otherwise used in widget's parent.</li>
+            <li><b>fill: </b>Determines whether widget fills any extra space allocated to it by the packer, or keeps its own minimal dimensions: NONE (default), X (fill only horizontally), Y (fill only vertically), or BOTH (fill both horizontally and vertically).</li>
+            <li><b>side: </b>Determines which side of the parent widget packs against: TOP (default), BOTTOM, LEFT, or RIGHT.</li>
+        </ul>
+        <p></p>
+        <p> </p>
+    </div>
+    <div id='fourth'>
+        <h2>Tkinter grid() Method</h2>
+        <hr>
+        <p>This geometry manager organizes widgets in a table-like structure in the parent widget.</p>
+        <h4>Syntax</h4>
+        <p>widget.grid( grid_options )</p>
+        <p>Here is the list of possible options-</p>
+        <ul>
+            <li><b>column :</b> The column to put widget in; default 0 (leftmost column).</li>
+            <li><b>columnspan:</b> How many columns widgetoccupies; default 1.</li>
+            <li><b>ipadx, ipady :</b>How many pixels to pad widget, horizontally and vertically, outside v's borders.
+            </li>
+            <li><b>row:</b> The row to put widget in; default the first row that is still empty.
+            </li>
+            <li><b>rowspan : </b>How many rowswidget occupies; default 1.</li>
+            <li><b>sticky : </b>What to do if the cell is larger than widget. By default, with sticky='', widget is centered in its cell. sticky may be the string concatenation of zero or more of N, E, S, W, NE, NW, SE, and SW, compass directions indicating the sides and corners of the cell to which widget sticks.</li>
+            <li><b>padx, pady :</b> How many pixels to pad widget, horizontally and vertically, outside v's borders.</li>
+        </ul>
+        <p></p>
+
+     </div>
+    <div id='five'>
+        <h2>Tkinter place() Method</h2>
+        <hr>
+        <p>This geometry manager organizes widgets by placing them in a specific position in the parent widget.</p>
+        <h4>Syntax</h4>
+        <p>widget.place( place_options )</p>
+        <p>Here is the list of possible options-</p>
+        <ul>
+            <li><b>anchor : </b>The exact spot of widget other options refer to: may be N, E, S, W, NE, NW, SE, or SW, compass directions indicating the corners and sides of widget; default is NW (the upper left corner of widget)</li>
+            <li><b>bordermode :</b> INSIDE (the default) to indicate that other options refer to the parent's inside (ignoring the parent's border); OUTSIDE otherwise.
+            </li>
+            <li><b>height, width : </b>Height and width in pixels.</li>
+            <li><b>relheight, relwidth :</b>Height and width as a float between 0.0 and 1.0, as a fraction of the height and width of the parent widget.</li>
+            <li><b>relx, rely : </b>Horizontal and vertical offset as a float between 0.0 and 1.0, as a fraction of the height and width of the parent widget.</li>
+            <li><b>x, y : </b>Horizontal and vertical offset in pixels.</li>
+        </ul>
+        <p></p>
+
+     </div>
+     
+  </div>
+</body>    
+</html>

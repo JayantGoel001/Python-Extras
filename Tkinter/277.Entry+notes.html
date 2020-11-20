@@ -1,0 +1,151 @@
+<html>
+<head>
+    <title>Tkinter Entry</title>
+    <style type='text/css'>
+        #main{
+                height:3650;
+                widht:95%;
+                background-color:peachpuff;
+                margin:20px;
+                border-radius:20px;
+                padding:20px;
+                 }
+        #first{
+                height:400;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #third{
+                height:1600;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #fourth{
+                height:1300;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        
+    </style>
+</head>
+<body>
+    <div id='main'>
+    <div id='first'>
+        <h2></h2>
+        <hr>
+        <p></p>
+        <p></p>
+        <p></p>
+        <h4>Syntax:</h4>
+        <p>Here is the simple syntax to create this widget-</p>
+        
+        <p></p>
+        <hr>
+        <h3>Parameters:</h3>
+        <h4>master:</h4>
+        <p>This represents the parent window.</p>
+        <h4>options:</h4>
+        <p>Here is the list of most commonly used options for this widget in the next page given below. These options can be used as key-value pairs separated by commas.
+        </p>
+    </div>
+    <div id='third'>
+        <h2>Options available and their description</h2>
+        <hr>
+        <h4>1.bg</h4>
+        <p>The normal background color displayed behind the label and indicator.</p>
+        <p> </p>
+        <h4>2.bd</h4>
+        <p>The size of the border around the indicator. Default is 2 pixels.</p>
+        <p> </p>
+        <h4>3.command</h4>
+        <p>A procedure to be called every time the user changes the state of this checkbutton.</p>
+        <p> </p>
+        <h4>4.cursor</h4>
+        <p>If you set this option to a cursor name (arrow, dot etc.), the mouse cursor will change to that pattern when it is over the checkbutton</p>
+        <p> </p>
+        <h4>5.font</h4>
+        <p>The font used for the text.</p>
+        <p> </p>
+        <h4>6.exportselection</h4>
+        <p>By default, if you select text within an Entry widget, it is automatically exported to the clipboard. To avoid this exportation, use exportselection=0.</p>
+        <p> </p>
+        <h4>7.fg</h4>
+        <p>The color used to render the text.</p>
+        <p> </p>
+        <h4>8.highlightcolor</h4>
+        <p>The color of the focus highlight when the checkbutton has the focus.</p>
+        <p> </p>
+        <h4>9.justify</h4>
+        <p>If the text contains multiple lines, this option controls how the text is justified: CENTER, LEFT, or RIGHT.</p>
+        <p> </p>
+        <h4>10.relief</h4>
+        <p>With the default value, relief=FLAT, the checkbutton does not stand out from its background. You may set this option to any of the other styles</p>
+        <p> </p>
+        <h4>11.selectbackground</h4>
+        <p>The background color to use displaying selected text.</p>
+        <p> </p>
+        <h4>12.selectborderwidth</h4>
+        <p>The width of the border to use around selected text. The default is one pixel.</p>
+        <p> </p>
+        <h4>13.selectforeground</h4>
+        <p>The foreground (text) color of selected text.</p>
+        <p> </p>
+        <h4>14.show</h4>
+        <p>Normally, the characters that the user types appear in the entry. To make a .password. entry that echoes each character as an asterisk, set show="*".</p>
+        <p> </p>
+        <h4>15.state</h4>
+        <p>The default is state=NORMAL, but you can use state=DISABLED to gray out the control and make it unresponsive. If the cursor is currently over the checkbutton, the state is ACTIVE.</p>
+        <p> </p>
+        <h4>16.textvariable</h4>
+        <p>In order to be able to retrieve the current text from your entry widget, you must set this option to an instance of the StringVar class.</p>
+        <p> </p>
+        <h4>17.width</h4>
+        <p>The default width of a checkbutton is determined by the size of the displayed image or text. You can set this option to a number of characters and the checkbutton will always have room for that many characters.</p>
+        <p> </p>
+        <h4>18.xscrollcommand</h4>
+        <p>If you expect that users will often enter more text than the onscreen size of the widget, you can link your entry widget to a scrollbar.</p>
+        <p> </p>
+    </div>
+    <div id='fourth'>
+        <h2>Methods</h2>
+        <hr>
+        <h2>delete ( first, last=None )</h2>
+        <p>Deletes characters from the widget, starting with the one at index first, up to but not including the character at position last. If the second argument is omitted, only the single character at position first is deleted.</p>
+        <h2>get()</h2>
+        <p>Returns the entry's current text as a string.</p>
+        <h2>icursor ( index )</h2>
+        <p>Set the insertion cursor just before the character at the given index.</p>
+        <h2>index ( index )</h2>
+        <p>Shift the contents of the entry so that the character at the given index is the leftmost visible character. Has no effect if the text fits entirely within the entry.</p>
+        <h2>insert ( index, s )</h2>
+        <p>Inserts string s before the character at the given index.</p>
+        <h2>select_adjust ( index )</h2>
+        <p>This method is used to make sure that the selection includes the character at the specified index.</p>
+        <h2>select_clear()</h2>
+        <p>Clears the selection. If there isn't currently a selection, has no effect.</p>
+        <h2>select_from ( index )</h2>
+        <p>Sets the ANCHOR index position to the character selected by index, and selects that character.</p>
+        <h2>select_present()</h2>
+        <p>If there is a selection, returns true, else returns false.</p>
+        <h2>select_range ( start, end )</h2>
+        <p>Sets the selection under program control. Selects the text starting at the start index, up to but not including the character at the end index. The start position must be before the end position.</p>
+        <h2>select_to ( index )</h2>
+        <p>Selects all the text from the ANCHOR position up to but not including the character at the given index.</p>
+        <h2>xview ( index )</h2>
+        <p>This method is useful in linking the Entry widget to a horizontal scrollbar.</p>
+        <h2>xview_scroll ( number, what )</h2>
+        <p>Used to scroll the entry horizontally. The what argument must be either UNITS, to scroll by character widths, or PAGES, to scroll by chunks the size of the entry widget. The number is positive to scroll left to right, negative to scroll right to left.</p>  
+     </div>
+     
+  </div>
+</body>    
+</html>

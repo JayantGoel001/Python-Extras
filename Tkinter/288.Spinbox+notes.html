@@ -1,0 +1,159 @@
+<html>
+<head>
+    <title>Tkinter Spinbox</title>
+    <style type='text/css'>
+        #main{
+                height:3550;
+                widht:95%;
+                background-color:peachpuff;
+                margin:20px;
+                border-radius:20px;
+                padding:20px;
+                 }
+        #first{
+                height:470;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #third{
+                height:2130;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        #fourth{
+                height:605;
+                widht:80%;
+                background-color:skyblue;
+                margin:50px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        
+    </style>
+</head>
+<body>
+    <div id='main'>
+    <div id='first'>
+        <h2>Tkinter Spinbox</h2>
+        <hr>
+        <p>The Spinbox widget is a variant of the standard Tkinter Entry widget, which can be used to select from a fixed number of values.
+        </p>
+        <h4>Syntax:</h4>
+        <p>Here is the simple syntax to create this widget-</p>
+        
+        <p>w = Spinbox( master, option, ... )</p>
+        <hr>
+        <h3>Parameters:</h3>
+        <h4>master:</h4>
+        <p>This represents the parent window.</p>
+        <h4>options:</h4>
+        <p>Here is the list of most commonly used options for this widget in the next page given below. These options can be used as key-value pairs separated by commas.
+        </p>
+    </div>
+    <div id='third'>
+        <h2>Options available and their description</h2>
+        <hr>
+        <h4>1.activebackground</h4>h4>
+        <p>The color of the slider and arrowheads when the mouse is over them.</p>
+        <p> </p>
+        <h4>2.bg</h4>
+        <p>The color of the slider and arrowheads when the mouse is not over them.</p>
+        <p> </p>
+        <h4>3.bd</h4>
+        <p>The width of the 3-d borders around the entire perimeter of the trough, and also the width of the 3-d effects on the arrowheads and slider. Default is no border around the trough, and a 2-pixel border around the arrowheads and slider.</p>
+        <p> </p>
+        <h4>4.command</h4>
+        <p>A procedure to be called whenever the scrollbar is moved.</p>
+        <p> </p>
+        <h4>5.cursor</h4>
+        <p>The cursor that appears when the mouse is over the scrollbar.</p>
+        <p> </p>
+        <h4>6.disabledbackground</h4>
+        <p>The background color to use when the widget is disabled.</p>
+        <p> </p>
+        <h4>7.disabledforeground</h4>
+        <p>The text color to use when the widget is disabled.</p>
+        <p> </p>
+        <h4>8.fg</h4>
+        <p>Text color.</p>
+        <p> </p>
+        <h4>9.font</h4>
+        <p>The font to use in this widget.</p>
+        <p> </p>
+        <h4>10.format</h4>
+        <p>Format string. No default value.</p>
+        <p> </p>
+        <h4>11.from</h4>
+        <p>The minimum value. Used together with to to limit the spinbox range.</p>
+        <p> </p>
+        <h4>12.justify</h4>
+        <p>Default is LEFT</p>
+        <p> </p>
+        <h4>13.relief</h4>
+        <p>Default is SUNKEN.</p>
+        <p> </p>
+        <h4>14.repeatdelay</h4>
+        <p>Together with repeatinterval, this option controls button auto- repeat. Both values are given in milliseconds.</p>
+        <p> </p>
+        <h4>15.repeatinterval</h4>
+        <p>See repeatdelay.</p>
+        <p> </p>
+        <h4>16.state</h4>
+        <p>One of NORMAL, DISABLED, or "readonly". Default is NORMAL.</p>
+        <p> </p>
+        <h4>17.textvariable</h4>
+        <p>No default value.</p>
+        <p> </p>
+        <h4>18.to</h4>
+        <p>See from.</p>
+        <p> </p>
+        <h4>19.validate</h4>
+        <p>Validation mode. Default is NONE.</p>
+        <p> </p>
+        <h4>20.validatecommand</h4>
+        <p>Validation callback. No default value.</p>
+        <p> </p>
+        <h4>21.values</h4>
+        <p>A tuple containing valid values for this widget. Overrides from/to/increment.</p>
+        <p> </p>
+        <h4>22.vcmd</h4>
+        <p>Same as validatecommand.</p>
+        <p> </p>
+        <h4>23.width</h4>
+        <p>Widget width, in character units. Default is 20.</p>
+        <p> </p>
+        <h4>24.wrap</h4>
+        <p>If true, the up and down buttons will wrap around.</p>
+        <p> </p>
+        <h4>25.xscrollcommand</h4>
+        <p>Used to connect a spinbox field to a horizontal scrollbar. This option should be set to the set method of the corresponding scrollbar.</p>
+        <p> </p>
+    </div>
+    <div id='fourth'>
+        <h2>Methods</h2>
+        <hr>
+        <h2>delete(startindex [,endindex])</h2>
+        <p>This method deletes a specific character or a range of text.</p>
+        <h2>get(startindex [,endindex])</h2>
+        <p>
+This method returns a specific character or a range of text.</p>
+        <h2>identify(x, y)</h2>
+        <p>Identifies the widget element at the given location.</p>
+        <h2>index(index)</h2>
+        <p>Returns the absolute value of an index based on the given index.</p>
+        <h2>insert(index [,string]...)</h2>
+        <p>
+This method inserts strings at the specified index location.</p>
+        <h2>invoke(element)</h2>
+        <p>Invokes a spinbox button.</p>
+     </div>
+     
+  </div>
+</body>    
+</html>
