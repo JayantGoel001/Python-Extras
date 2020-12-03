@@ -26,6 +26,14 @@ def view():
     conn.close()
     return rows
 
+def delete(roll):
+    conn = psycopg2.connect("dbname='data2' user='postgres' password='postgres' password='postgres' port='5432' host='localhost'")
+    cur = conn.cursor()
+    cur.execute("DELETE FROM data WHERE rollNo=%s", (roll,))
+    conn.commit()
+    conn.close()
+
 
 print(view())
-
+delete(5)
+print(view())

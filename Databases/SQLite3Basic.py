@@ -27,4 +27,14 @@ def view():
     return rows
 
 
+def delete(roll):
+    conn = sqlite3.connect('lite.db')
+    cur = conn.cursor()
+    cur.execute("DELETE FROM data WHERE rollNo=?", (roll,))
+    conn.commit()
+    conn.close()
+
+
+print(view())
+delete(5)
 print(view())
