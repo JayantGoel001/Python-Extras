@@ -17,5 +17,15 @@ def insert(rollNo, name, marks):
     conn.commit()
     conn.close()
 
+def view():
+    conn = psycopg2.connect("dbname='data2' user='postgres' password='postgres' password='postgres' port='5432' host='localhost'")
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM data ")
+    rows = cur.fetchall()
+    conn.commit()
+    conn.close()
+    return rows
 
-insert(1, "Pugg Ms", 100.0)
+
+print(view())
+

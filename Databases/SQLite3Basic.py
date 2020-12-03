@@ -17,4 +17,14 @@ def insert(rollNo, name, marks):
     conn.close()
 
 
-insert(1, "Pugg Ms", 100.0)
+def view():
+    conn = sqlite3.connect('lite.db')
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM data ")
+    rows = cur.fetchall()
+    conn.commit()
+    conn.close()
+    return rows
+
+
+print(view())
