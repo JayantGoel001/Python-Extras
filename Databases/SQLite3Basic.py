@@ -43,6 +43,7 @@ def update(roll, name, mark):
     conn.close()
 
 
+createTable()
 insert(0, "JA", 0.92)
 print(view())
 delete(5)
