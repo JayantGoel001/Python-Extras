@@ -35,6 +35,17 @@ def delete(roll):
     conn.close()
 
 
+def update(roll, name, mark):
+    conn = sqlite3.connect('lite.db')
+    cur = conn.cursor()
+    cur.execute("UPDATE data SET name=?,marks=? WHERE rollNo=?", (name, mark, roll))
+    conn.commit()
+    conn.close()
+
+
+insert(0, "JA", 0.92)
 print(view())
 delete(5)
+print(view())
+update(0, "Jai", 92)
 print(view())
